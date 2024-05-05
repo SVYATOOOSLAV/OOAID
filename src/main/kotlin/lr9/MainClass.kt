@@ -1,15 +1,15 @@
 package lr9
 
 fun main(){
-    val root  = Node("Root")
-    val node1 = Node("Node 1")
-    val node2 = Node("Node 2")
+    val root  = NodeImpl("Root")
+    val nodeImpl1 = NodeImpl("Node 1")
+    val nodeImpl2 = NodeImpl("Node 2")
 
-    root.addChild(node1)
-    root.addChild(node2)
-    node1.addChild(Leaf("Leaf 1"))
-    node1.addChild(Leaf("Leaf 2"))
-    node2.addChild(Leaf("Leaf 3"))
+    root.addChild(nodeImpl1)
+    root.addChild(nodeImpl2)
+    nodeImpl1.addChild(Leaf("Leaf 1"))
+    nodeImpl1.addChild(Leaf("Leaf 2"))
+    nodeImpl2.addChild(Leaf("Leaf 3"))
 
     println("Результирующее дерево:")
     Printer.showTreeToDisplay(root)

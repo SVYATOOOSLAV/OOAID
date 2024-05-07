@@ -31,4 +31,8 @@ data class NodeImpl(var name: String) : Node {
         }
         return children[index]
     }
+
+    fun showTree(){
+        Printer.showToDisplay(this)
+    }
 }

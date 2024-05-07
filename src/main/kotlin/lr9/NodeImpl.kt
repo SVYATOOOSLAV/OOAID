@@ -13,7 +13,7 @@ data class NodeImpl(var name: String) : Node {
 
     override fun addChild(child: TreeElement) {
         if (children.contains(child)) {
-            throw OperationsException("Child node already exists in the children list");
+            throw OperationsException("Child node already exists in the children list")
         }
         children.add(child)
     }
@@ -22,7 +22,7 @@ data class NodeImpl(var name: String) : Node {
         if (!children.contains(child)) {
             throw OperationsException("Child node does not exist in the children list")
         }
-        children.remove(child);
+        children.remove(child)
     }
 
     override fun getChild(index: Int): TreeElement {
